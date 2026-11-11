@@ -1,4 +1,3 @@
-/* JavaScript vanilla: alternar tema, menú accesible y caso de estudio. */
 (() => {
 	'use strict';
 	const root = document.documentElement;
@@ -11,7 +10,6 @@
 	const dialog = document.getElementById('case-mesa');
 	let menuReturnFocus = null;
 
-	// Preferencia del sistema, salvo que el visitante ya haya elegido manualmente.
 	let savedTheme = null;
 	try { savedTheme = localStorage.getItem('portfolio-theme'); } catch (_) { /* private mode */ }
 	const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
